@@ -1,0 +1,427 @@
+
+ /*@font-face{                               подключаем  шрифты  
+  src: url('fonts.ttf');                   указываем  папку  со  шрифтами  и  расширение  шрифтов 
+} */
+
+ .container{                           
+  width: 1200px;                         /* ширина  контейнера */
+  margin: 0 auto;                        /* по  вертикали  ноль  по  ширине  авто  */
+}
+
+       /* HEDER */
+
+.page-header{
+  padding-top:22px;
+  padding-bottom: 113px;
+} 
+
+.page-nav{
+  display: flex;                    
+  justify-content: space-between;      /*  растянуть  елементы  равномерно  */
+}
+
+.site-logo{
+  display: block;                        /*  делаем  елемент  блочным  */
+  font-family: 'Montserrat', sans-serif;            /* выбираем  необходимый  шрифт */
+  font-weight: 700;                      /* выбираем  жирность  шрифта */
+  font-size: 30px;                       /* выбираем  размер  для  шрифта */
+  line-height: 42px;                  /*  размер  строковой  линии  */
+  color: #95e1d3;                      /* указываем  цвет  для  шрифта */
+}
+
+.site-navigation{
+  display: flex;                    
+  justify-content: space-between;      /*  растянуть  елементы  равномерно  */
+  list-style: none;                    /*  убераем  оформление  списка  ( точки )  */
+  min-width: 490px;  
+  padding-top: 0px;
+}
+
+.site-navigation a{
+  display: block;
+  font-family: 'Montserrat', sans-serif;          /* название одно */
+  font-weight: 400;                    /* разный вес/жирность */
+  font-size: 14px;                     /* размер  шрифта  текста  */ 
+  line-height: 38px;                  /*  размер  строковой  линии  */
+  text-transform: uppercase ;          /*  зделать  текст  с  большой  буквой  */
+  text-decoration: none ;              /*  убераем  подчеркивание  */
+  color: #95e1d3;                    /*  цвет  текста  */
+  transition: color  200ms linear, border  200ms linear;
+}
+
+.site-navigation a:hover,      /*  задайом  цвет  при  наведении  на  сылку  */
+.site-navigation a:focus{      /*  задайом  цвет  при    перемещении  клавиатурой  таб  */
+    color: #f38181;
+    border-bottom: 3px solid #f38181;
+  }
+
+              /* MAIN */
+
+.slid{
+   padding-bottom: 69px;
+}
+
+.slider{
+  padding-bottom: 8px;
+}
+
+.hh-sp{ 
+  margin: 0;
+  padding: 0;
+  display: block;
+  font-family: 'Kaushan Script', cursive;          /* название одно */
+  font-weight: 400;                    /* разный вес/жирность */
+  font-size: 24px;                     /* размер  шрифта  текста  */ 
+  line-height: 24px;                  /*  размер  строковой  линии  */
+  text-transform: none ;          /*  зделать  текст  с  большой  буквой  */
+  color: #333333;                      /* указываем  цвет  для  шрифта */
+  text-align: center;
+}
+
+.hh{
+  margin: 0;
+  padding: 0;
+  display: block;                        /*  делаем  елемент  блочным  */
+  font-family: 'Montserrat', sans-serif;             /* выбираем  необходимый  шрифт */
+  font-weight: 700;                      /* выбираем  жирность  шрифта */
+  font-size: 30px;                       /* выбираем  размер  для  шрифта */
+  text-transform: uppercase ;          /*  зделать  текст  с  большой  буквой  */
+  line-height: 74px;                  /*  размер  строковой  линии  */
+  color: #333333;                      /* указываем  цвет  для  шрифта */
+  text-align: center;
+  margin-bottom: 50px;
+}
+ 
+.hh::after{
+  display: block;                            /* делаем  елемент  блочным */
+  content: '';                             /*  создайом  пустой контент  */
+  padding:0;
+  margin: 0;
+  width: 60px;                            /*  задайом  ширину */
+  height: 3px;                             /*  задайом  высоту  */
+  background-color: #f38181;               /* задайом цвет заливки контента */
+  margin: 0  auto;                           /*  устанавливаем  блок  по  центру  ширины  */
+  margin-top: 20px;
+}
+
+      /* SPISOC 1 */
+
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;      /*  растянуть  елементы  равномерно  */
+  margin: 0;
+  padding: 0;
+}
+
+  .features-list-item{
+    position: relative;
+    flex-basis: 310px;    /*  ширина  лишки  */
+    flex-grow: 0;           /*  запрещяем  расти  */
+    flex-shrink: 0;        /*  запрещяем  зжиматся  */
+    padding-left: 90px;
+    margin-bottom: 78px;
+  }
+
+  
+  .features-p{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;             /* выбираем  необходимый  шрифт */
+    font-weight: 400;                      /* выбираем  жирность  шрифта */
+    font-size: 14px;                       /* выбираем  размер  для  шрифта */
+    text-transform: uppercase ;          /*  зделать  текст  с  большой  буквой  */
+    line-height: 44px;                  /*  размер  строковой  линии  */
+    color: #17201d;                      /* указываем  цвет  для  шрифта */
+  }
+ 
+   .features-pp{
+    margin: 0;
+    padding: 0;
+    display: block;                        /*  делаем  елемент  блочным  */
+    font-family: 'Roboto', sans-serif;            /* выбираем  необходимый  шрифт */
+    font-weight: 400;                      /* выбираем  жирность  шрифта */
+    font-size: 15px;                       /* выбираем  размер  для  шрифта */
+    text-transform: none;          /*  зделать  текст  с  большой  буквой  */
+    line-height: 24px;                  /*  размер  строковой  линии  */
+    color: #b6b6b6;                      /* указываем  цвет  для  шрифта */
+   }
+   
+   
+   .features-list-item::before{
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    background-position: center;                        /* расположение  по  центру  фото  */
+    top: 15px;
+    left: 29px;
+}
+   .icon1::before{
+    background-image: url(../img/1.png);
+  }
+  .icon2::before{
+    background-image: url(../img/2.png);
+  }
+  .icon3::before{
+    background-image: url(../img/3.png);
+  }
+  .icon4::before{
+    background-image: url(../img/4.png);
+  }
+  .icon5::before{
+    background-image: url(../img/5.png);
+  }
+  .icon6::before{
+    background-image: url(../img/6.png);
+  }
+
+      /* SPISOC 2 */
+
+.slid-zag{
+  margin: 0;
+  padding: 0;
+  display: block;                        /*  делаем  елемент  блочным  */
+  font-family: 'Roboto', sans-serif;          /* выбираем  необходимый  шрифт */
+  font-weight: 400;                      /* выбираем  жирность  шрифта */
+  font-size: 15px;                       /* выбираем  размер  для  шрифта */
+  text-transform: none;          /*  зделать  текст  с  большой  буквой  */
+  line-height: 24px;                  /*  размер  строковой  линии  */
+  color: #999999;                      /* указываем  цвет  для  шрифта */
+  width: 955px;                         /* ширина  контейнера */
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 85px;
+}
+.dd{
+  margin-bottom: 41px;
+}
+
+.featured-products{
+  display: flex;
+  justify-content: space-between;      /*  растянуть  елементы  равномерно  */
+  margin: 0;
+  padding: 0;
+}
+
+.zag-q{
+  margin: 0;
+  padding: 0;
+  display: block;                        /*  делаем  елемент  блочным  */
+  font-family: 'Montserrat', sans-serif;             /* выбираем  необходимый  шрифт */
+  font-weight: 400;                      /* выбираем  жирность  шрифта */
+  font-size: 14px;                       /* выбираем  размер  для  шрифта */
+  text-transform: uppercase;          /*  зделать  текст  с  большой  буквой  */
+  line-height: 14px;                  /*  размер  строковой  линии  */
+  color: #333333;                      /* указываем  цвет  для  шрифта */
+  text-align: center;
+  padding-top: 30px;
+}
+
+.zag-w{
+  margin: 0;
+  padding: 0;
+  display: block;                        /*  делаем  елемент  блочным  */
+  font-family: 'Roboto', sans-serif;             /* выбираем  необходимый  шрифт */
+  font-weight: 300;                      /* выбираем  жирность  шрифта */
+  font-size: 15px;                       /* выбираем  размер  для  шрифта */
+  font-style: italic;
+  text-transform: none;          /*  зделать  текст  с  большой  буквой  */
+  line-height: 43px;                  /*  размер  строковой  линии  */
+  color: #a8a8a8;                      /* указываем  цвет  для  шрифта */
+  text-align: center;
+}
+
+.img-kont img{
+  position: absolute;
+}
+.img-img{
+  position: absolute;
+  width: 380px;
+  height: 470px;
+  background-image: linear-gradient(to top, rgba(242, 226, 145, 0.9),rgba(234, 138, 137, 0.9));
+  opacity: 0;
+  z-index: 0;
+  transition:  200ms linear;
+}
+
+.opasetii-aa{
+  position: absolute;
+  width: 55px;
+  height: 56px;
+  border: 0;
+  background: #fce38a;                                    /*  убераем  фон  кнопки  */
+  background-image: url(../img/10.png);
+  background-repeat: no-repeat;
+  background-position: center;                        /* расположение  по  центру  фото  */
+
+  top: 207px;
+  left: 78px;
+  z-index: 1;
+  transition:  200ms linear;
+}
+.opasetii-aa:hover,      /*  задайом  цвет  при  наведении  на  сылку  */
+.opasetii-aa:focus {      /*  задайом  цвет  при    перемещении  клавиатурой  таб  */
+  background-color: #95e1d3;
+}
+
+.opasetii-ba{
+  position: absolute;
+  width: 55px;
+  height: 56px;
+  border: 0;
+  background: #fce38a;                                    /*  убераем  фон  кнопки  */
+  background-image: url(../img/11.png);
+  background-repeat: no-repeat;
+  background-position: center;                        /* расположение  по  центру  фото  */
+  transition:  200ms linear;
+  top: 207px;
+  left: 134px;
+  z-index: 1;
+}
+.opasetii-ba:hover,      /*  задайом  цвет  при  наведении  на  сылку  */
+.opasetii-ba:focus {      /*  задайом  цвет  при    перемещении  клавиатурой  таб  */
+  background-color: #95e1d3;
+}
+
+.opasetii-ca{
+  position: absolute;
+  width: 55px;
+  height: 56px;
+  border: 0;
+  background: #fce38a;                                    /*  убераем  фон  кнопки  */
+  background-image: url(../img/12.png);
+  background-repeat: no-repeat;
+  background-position: center;                        /* расположение  по  центру  фото  */
+  transition:  200ms linear;
+  top: 207px;
+  left: 190px;
+  z-index: 1;
+}
+.opasetii-ca:hover,      /*  задайом  цвет  при  наведении  на  сылку  */
+.opasetii-ca:focus {      /*  задайом  цвет  при    перемещении  клавиатурой  таб  */
+  background-color: #95e1d3;
+}
+
+.opasetii-da{
+  position: absolute;
+  width: 55px;
+  height: 56px;
+  border: 0;
+  background: #fce38a;                                    /*  убераем  фон  кнопки  */
+  background-image: url(../img/13.png);
+  background-repeat: no-repeat;
+  background-position: center;                        /* расположение  по  центру  фото  */
+  transition:  200ms linear;
+  top: 207px;
+  left: 246px;
+  z-index: 1;
+}
+.opasetii-da:hover,      /*  задайом  цвет  при  наведении  на  сылку  */
+.opasetii-da:focus {      /*  задайом  цвет  при    перемещении  клавиатурой  таб  */
+  background-color: #95e1d3;
+}
+
+
+.img-kont{
+  position: relative;
+  transition:  200ms linear;
+}
+.img-kont:hover,
+.img-kont:focus{ 
+transform: translate( -10px, -10px);     /* перемещяем картинку на верх и лево на 10px */
+}
+
+.img-kont:hover .img-img,
+.img-kont:focus .img-img{ 
+  opacity: 1;
+}
+
+.product-img{
+  
+  width: 370px;
+  height: 460px;
+  border-right: 10px solid #95e1d3;
+  border-bottom: 10px solid #95e1d3;
+}
+
+
+
+
+    /* FUTER */
+
+    .futeres{
+      display: flex;                    
+      justify-content: space-between;      /*  растянуть  елементы  равномерно  */
+      border-top: 1px solid #e5e5e5;
+    }
+
+    .location{
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;             /* выбираем  необходимый  шрифт */
+      font-weight: 400;            /* жирность  */
+      line-height: 40px;          /*  размер  строковой  линии  */
+      font-size: 14px;            /*  размер  шрифта  */
+      color: #333333;            /*  цвет  текста  */
+      text-align: left;           /*  расположение  текста  в  контенере  по  ширене  */
+      padding-top: 10px;
+      padding-bottom: 12px;
+    }
+    .location a{
+      text-decoration: none ;        /*  убераем  подчеркивание  */
+      color: #333333; 
+      transition: color  200ms linear;
+    }
+    .location a:hover,      /*  задайом  цвет  при  наведении  на  сылку  */
+    .location a:focus{      /*  задайом  цвет  при    перемещении  клавиатурой  таб  */
+     color: #f38181;
+    }
+
+    .forma{
+      position: relative;
+      padding-top: 10px;
+      padding-bottom: 12px;
+      
+    }
+
+
+    .forma-in{
+      position: absolute;
+      width: 229px;
+      height: 38px;
+      padding: 0;
+      border: 1px solid #e7e7e7;
+      padding-left: 12px;
+      color: #d9d9d9;
+      font-family: 'Roboto', sans-serif;             /* выбираем  необходимый  шрифт */
+      font-weight: 300;                      /* выбираем  жирность  шрифта */
+      font-size: 15px;                       /* выбираем  размер  для  шрифта */
+      font-style: italic;
+      right: 149px;
+     
+    } 
+     
+     .forma-sub{
+      position: absolute;
+      width: 150px;
+      height: 40px;
+      border: none;
+      border: 0;
+      background-color: #95e1d3;
+      right: 0;
+      font-family: 'Montserrat', sans-serif;            /* выбираем  необходимый  шрифт */
+      font-weight: 700;                      /* выбираем  жирность  шрифта */
+      font-size: 14px;                       /* выбираем  размер  для  шрифта */
+      text-transform: uppercase;          /*  зделать  текст  с  большой  буквой  */
+      line-height: 14px;                  /*  размер  строковой  линии  */
+      color: #ffffff;
+      text-align: center;
+      transition: background-color 200ms linear;
+     }
+      
+     .forma-sub:hover,
+     .forma-sub:focus{
+      background-color: #000000;
+     }
+    
